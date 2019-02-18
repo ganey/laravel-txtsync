@@ -1,0 +1,45 @@
+{
+    "name": "laravel-notification-channels/txtsync",
+    "description": "TxtSync SMS API integration",
+    "keywords": [
+        "laravel",
+        "notifications",
+        "txtsync"
+    ],
+    "homepage": "https://github.com/laravel-notification-channels/txtsync",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Michael Gane",
+            "email": "git@ganey.co.uk",
+            "homepage": "https://ganey.co.uk",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": ">=7.2",
+        "illuminate/notifications": "~5.5 || ~6.0",
+        "illuminate/support": "^~5.5 || ~6.0",
+        "guzzlehttp/guzzle": "^6"
+    },
+    "require-dev": {
+        "mockery/mockery": "^0.9.5",
+        "phpunit/phpunit": "4.*"
+    },
+    "autoload": {
+        "psr-4": {
+            "NotificationChannels\\TxtSync\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "NotificationChannels\\TxtSync\\Test\\": "tests"
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit"
+    },
+    "config": {
+        "sort-packages": true
+    }
+}
